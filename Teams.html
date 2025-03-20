@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Avengers Universe</title>
+    <style>
+        /* Global Reset and Body Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212; /* Dark background for contrast */
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #ff0000; /* Avengers Red */
+            padding: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 3em;
+            font-weight: bold;
+            letter-spacing: 5px;
+            color: white;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #003366; /* Dark Blue */
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 20px;
+        }
+
+        nav a:hover {
+            color: #ffcc00; /* Bright Yellow for hover effect */
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('#'); /* Avengers Logo */
+            background-size: cover;
+            height: 500px;
+            color: white;
+            text-align: center;
+            padding-top: 150px;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        /* Characters Section */
+        .characters {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 20px;
+            flex-wrap: wrap;
+        }
+
+        .character {
+            background-color: #444444;
+            width: 30%;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .character img {
+            width: 80%;
+            max-width: 200px;
+            border-radius: 8px;
+        }
+
+        .character h2 {
+            color: #ffcc00; /* Yellow Text */
+            font-size: 2em;
+            margin-top: 10px;
+        }
+
+        .character p {
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        Marvel Teams!
+    </header>
+
+    <nav>
+        <a href="Marvel Cenematic Universe.html">Marvel Cenematic Universe</a>
+        <a href="Phases.html">Phases</a>
+        <a href="index.html">Home</a>
+        <a href="Heroes.html">Heroes</a>
+        <a href="villans.html">Villains</a>
+        <a href="About.html">About</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to the Marvel Teams</h1>
+    </section>
+
+    <section class="characters">
+        <div class="character">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuKVcZMGyx24ACr4RDg6sHhAy8GHiY_dfdsQ&s" alt="The Avengers">
+            <h2>The Avengers</h2>
+            <p>The Avengers were a team of extraordinary individuals, with either superpowers or other special characteristics. Though primarily affiliated with the interests of the United States of America, the group's purpose was to protect global stability from inner or extraterrestrial threats. The Avengers were assembled in 2012 by S.H.I.E.L.D. as a result of the Avengers Initiative, when Loki invaded Earth with his Chitauri army. The first iteration of the team, consisting of Iron Man, Captain America, Hulk, Thor, Black Widow and Hawkeye, defeated Loki in the Battle of New York to stop the Chitauri Invasion.
+
+                When S.H.I.E.L.D. became a defunct agency due to the HYDRA infiltration, the team was no longer an American governmental division, therefore becoming an independent and private organization. Stark Industries remodeled Stark Tower into Avengers Tower and the team joined in the fight against HYDRA. After their victory, Stark built Ultron, hoping that the AI would be able to defend the world from any threats necessary in place of the Avengers. The plan backfired and Ultron started a war against humanity, forcing the Avengers to fight him. When Ultron was defeated, Hulk, Barton, Thor and Stark left the team, so Wanda Maximoff, Vision, War Machine and Falcon were recruited, and they were relocated to the Avengers Compound.</p>
+        </div>
+        <div class="character">
+            <img src="data:image/png;base64,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" alt="Guardians of the Galaxy">
+            <h2>Guardians of the Galaxy</h2>
+            <p>The Guardians of the Galaxy are a team of intergalactic mercenaries who primarily defend the Andromeda galaxy. The team was founded in 2014 when Star-Lord, Gamora, Rocket, Groot, and Drax the Destroyer assembled to save Xandar from being decimated by Ronan the Accuser.</p>
+        </div>
+        <div class="character">
+            <img src="https://static.wikia.nocookie.net/marvelcinematicuniverse/images/5/5c/Avengers_Infinity_War_Promotional.jpg/revision/latest/scale-to-width-down/1000?cb=20180306202112" alt="The Black Order">
+            <h2>The Black Order</h2>
+            <p>The Black Order, also known as the Children of Thanos, was an elite team comprised of powerful individuals who used their abilities to serve their adoptive father Thanos.
+
+                As Thanos' vicious generals, they assisted him in his mission to find and harness the power of the Infinity Stones. Each of them had a specific superpower appropriate to their character.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 @Abhinav Yadav | All Rights Reserved</p>
+    </footer>
+    <script src="script.js" defer></script>
+
+</body>
+</html>
